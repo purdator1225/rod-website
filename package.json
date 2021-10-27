@@ -1,9 +1,7 @@
 {
   "homepage": "http://purdator1225/github.io/rod-website",
   "scripts": {
-    "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
-    "build": "webpack --config ./bundler/webpack.prod.js",
     "dev": "webpack serve --config ./bundler/webpack.dev.js"
   },
   "dependencies": {
