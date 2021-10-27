@@ -76,6 +76,7 @@ let mixer = null
      updateAllMaterials()
  })
  
+ console.log(gltfLoader)
 /**
  * points of interest
  */
@@ -168,7 +169,6 @@ const envMap = cubeTextureLoader.load([
 '/textures/environmentMaps/3/pz.jpg',
 '/textures/environmentMaps/3/nz.jpg'])
 
-scene.background= ""
 scene.environment= envMap
 envMap.encoding= THREE.sRGBEncoding
 debugObject.envMapIntensity = 5 
@@ -333,59 +333,59 @@ function updatePoints(position1,position2) {
 }
 
 //Add GUI for setting position
-gui.add(setposition1, 'x')
-.min(-10)
-.max(10)
-.step(0.01)
-.name('pos1.x')
-.onFinishChange(()=>{
-updatePoints(setposition1,setposition2)
-console.log(setposition1)})
+// gui.add(setposition1, 'x')
+// .min(-10)
+// .max(10)
+// .step(0.01)
+// .name('pos1.x')
+// .onFinishChange(()=>{
+// updatePoints(setposition1,setposition2)
+// console.log(setposition1)})
 
-gui.add(setposition1, 'y')
-.min(-10)
-.max(10)
-.step(0.01)
-.name('pos1y')
-.onFinishChange(()=>{
-updatePoints(setposition1,setposition2)
-console.log(setposition1)})
+// gui.add(setposition1, 'y')
+// .min(-10)
+// .max(10)
+// .step(0.01)
+// .name('pos1y')
+// .onFinishChange(()=>{
+// updatePoints(setposition1,setposition2)
+// console.log(setposition1)})
 
-gui.add(setposition1, 'z')
-.min(0)
-.max(10)
-.step(0.001)
-.name('pos1.z')
-.onFinishChange(()=>{
-updatePoints(setposition1,setposition2)
-console.log(setposition1)})
+// gui.add(setposition1, 'z')
+// .min(0)
+// .max(10)
+// .step(0.001)
+// .name('pos1.z')
+// .onFinishChange(()=>{
+// updatePoints(setposition1,setposition2)
+// console.log(setposition1)})
 
-gui.add(setposition2, 'x')
-.min(-10)
-.max(10)
-.step(0.01)
-.name('pos2.x')
-.onFinishChange(()=>{
-updatePoints(setposition1,setposition2)
-console.log(setposition2)})
+// gui.add(setposition2, 'x')
+// .min(-10)
+// .max(10)
+// .step(0.01)
+// .name('pos2.x')
+// .onFinishChange(()=>{
+// updatePoints(setposition1,setposition2)
+// console.log(setposition2)})
 
-gui.add(setposition2, 'y')
-.min(-10)
-.max(10)
-.step(0.01)
-.name('pos2y')
-.onFinishChange(()=>{
-updatePoints(setposition1,setposition2)
-console.log(setposition2)})
+// gui.add(setposition2, 'y')
+// .min(-10)
+// .max(10)
+// .step(0.01)
+// .name('pos2y')
+// .onFinishChange(()=>{
+// updatePoints(setposition1,setposition2)
+// console.log(setposition2)})
 
-gui.add(setposition2, 'z')
-.min(0)
-.max(10)
-.step(0.001)
-.name('pos2.z')
-.onFinishChange(()=>{
-updatePoints(setposition1,setposition2)
-console.log(setposition2)})
+// gui.add(setposition2, 'z')
+// .min(0)
+// .max(10)
+// .step(0.001)
+// .name('pos2.z')
+// .onFinishChange(()=>{
+// updatePoints(setposition1,setposition2)
+// console.log(setposition2)})
 
 //Create clock
  const clock = new THREE.Clock()
