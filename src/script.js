@@ -162,12 +162,12 @@ const updateAllMaterials= ()=>
  */
 
 const envMap = cubeTextureLoader.load([
-'/textures/environmentMaps/3/px.jpg',
-'/textures/environmentMaps/3/nx.jpg',
-'/textures/environmentMaps/3/py.jpg',
-'/textures/environmentMaps/3/ny.jpg',
-'/textures/environmentMaps/3/pz.jpg',
-'/textures/environmentMaps/3/nz.jpg'])
+'/textures/3/px.jpg',
+'/textures/3/nx.jpg',
+'/textures/3/py.jpg',
+'/textures/3/ny.jpg',
+'/textures/3/pz.jpg',
+'/textures/3/nz.jpg'])
 
 scene.environment= envMap
 envMap.encoding= THREE.sRGBEncoding
